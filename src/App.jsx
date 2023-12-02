@@ -17,21 +17,21 @@ import SignUp from './Component/SignUp/SignUp';
 
 function App() {
 
-  function ProtectedRoutes(props) {
-    let token = localStorage.getItem('token')
-    console.log(token);
-    if (!token) {
-      return <Navigate  to='/signin'/>
-    }else{
-      return props.children
-    }
-  }
+  // function ProtectedRoutes(props) {
+  //   let token = localStorage.getItem('token')
+  //   console.log(token);
+  //   if (!token) {
+  //     return <Navigate  to='/signin'/>
+  //   }else{
+  //     return props.children
+  //   }
+  // }
 
   let routes = createHashRouter([
     {
       path: '/', element: <UserLayout />, children: [
-        { index: true, element: <ProtectedRoutes><Home/></ProtectedRoutes> },
-        { path: 'Home', element: <ProtectedRoutes><Home/></ProtectedRoutes> },
+        { index: true, element: <Home/> },
+        { path: 'Home', element: <Home/>},
         { path: 'Movie', element: <Movie /> },
         { path: 'People', element: <People /> },
         { path: 'TvShowes', element: <Tv /> },
