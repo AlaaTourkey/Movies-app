@@ -30,8 +30,8 @@ function App() {
   let routes = createHashRouter([
     {
       path: '/', element: <UserLayout />, children: [
-        { index: true, element: <Home/> },
-        { path: 'Home', element: <Home/>},
+        { index: true, element: <Home /> },
+        { path: 'Home', element: <Home /> },
         { path: 'Movie', element: <Movie /> },
         { path: 'People', element: <People /> },
         { path: 'TvShowes', element: <Tv /> },
@@ -52,9 +52,9 @@ function App() {
 
   return (
     <>
-    <online><RouterProvider router={routes}></RouterProvider></online>
-    <Offline><Disconnected /></Offline>
-      
+      <online><RouterProvider router={routes}></RouterProvider></online>
+      <Offline><Disconnected /></Offline>
+
     </>
   );
 }

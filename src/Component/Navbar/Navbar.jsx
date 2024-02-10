@@ -8,7 +8,7 @@ function Navbar(props) {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark ">
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/"><h3>Noxe</h3></NavLink>
+            <NavLink className="navbar-brand" to="/Home"><h3>Noxe</h3></NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
@@ -23,7 +23,6 @@ function Navbar(props) {
                   <li className="nav-item">
                     <NavLink className="nav-link" to="TvShowes">TvShowes</NavLink>
                   </li>
-
                   <li className="nav-item">
                     <NavLink className="nav-link" to="People">People</NavLink>
                   </li>
