@@ -67,7 +67,7 @@ function SignUp() {
   return (
     <>
       <div className="text-capitalize">
-        <h1 className='my-4'>registeration form</h1>
+        <h1 className='my-4'>REGESTRATION FORM</h1>
 
         {validError.map( (error,index)=>(
           <div key={index} className="alert alert-danger p-3 my-3 ">

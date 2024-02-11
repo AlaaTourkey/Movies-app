@@ -17,16 +17,6 @@ import SignUp from './Component/SignUp/SignUp';
 
 function App() {
 
-  // function ProtectedRoutes(props) {
-  //   let token = localStorage.getItem('token')
-  //   console.log(token);
-  //   if (!token) {
-  //     return <Navigate  to='/signin'/>
-  //   }else{
-  //     return props.children
-  //   }
-  // }
-
   let routes = createHashRouter([
     {
       path: '/', element: <UserLayout />, children: [
